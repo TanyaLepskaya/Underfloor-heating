@@ -1,0 +1,120 @@
+.calc {
+
+&__container {
+    display: flex;
+    gap: 10px;
+}
+&__content {
+    flex-basis: 50%;
+}
+&__total {
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+    background: #333 url(/public/images/calc.jpg) center/cover no-repeat;
+    border-radius: 12px;
+}
+&__title {
+    margin-bottom: 32px;
+}
+&__fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+&__fieldset_size {
+    display: flex;
+    margin-bottom: 32px;
+}
+&__wrapper-input-size {
+    margin-right: 10px;
+}
+&__wrapper-input-size:last-child {
+    margin-right: 0;
+}
+&__text {
+    font-size: 12px;
+    color: #898989;
+    margin-bottom: 2px;
+}
+&__input-number {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 240px;
+    height: 54px;
+    padding: 0 25px;
+}
+&__fieldset_tariff {
+    margin-bottom: 65px;
+}
+&__text_legend {
+    margin-bottom: 16px;
+}
+&__wrapper-input-tariff {
+    margin-right: 16px;
+    display: inline-flex;
+}
+&__wrapper-input-tariff:last-child {
+    margin-right: 0;
+}
+&__input-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    margin-right: 8px;
+
+    &:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    
+    }
+    &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-color: #232020;
+    border-radius: 50%;
+    opacity: 0;
+    }
+    &:checked:after {
+        opacity: 1;
+    }
+}
+&__label-radio {
+    text-transform: uppercase;
+}
+&__result-wrapper {
+    flex-basis: 303px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+&__result {
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    
+}
+&__ressult:last-child {
+    margin-bottom: 0;
+}
+}
